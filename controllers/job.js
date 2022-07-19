@@ -7,7 +7,10 @@ const getAllJobs = async (req, res) => {
 }
 
 const createJob = async (req, res) => {
-    res.send("create job")
+    req.body.createdBy = req.user.userId
+    const job = await Job.createJob(req.body)
+    res.status(StatusCodes.CREATED).json({job})
+    
 }
 
 const getJob = async (req, res) => {

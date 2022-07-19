@@ -1,6 +1,9 @@
+const Job = require("../models/Job")
+const {StatusCodes} = require("http-status-codes")
+const { BadRequestError, NotFoundError} = require("../errors")
 
 const getAllJobs = async (req, res) => {
-    res.send("get all job")
+    res.json({user: req.user})
 }
 
 const createJob = async (req, res) => {

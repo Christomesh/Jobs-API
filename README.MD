@@ -1,9 +1,4 @@
 
-
-
-<a href="" target="_blank"><p align="center">
-  <img src="public/images/write_64.png" alt="MyDiary App logo">
-</p></a>
 <h2 align="center">⭐ Job API ⭐</h2>
 <h4 align="center">Jobs API where users can easily track their job applications.</h4>
 <br>
